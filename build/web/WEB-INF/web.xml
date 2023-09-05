@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee          http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    
+    <servlet>
+        <servlet-name>GetSetClient</servlet-name>
+        <servlet-class>servlets.GetSetClient</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>GetSetClient</servlet-name>
+        <url-pattern>/registrarCliente</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>GetSetClient</servlet-name>
+        <url-pattern>/getListClients</url-pattern>
+    </servlet-mapping>
+    //para obtener la lista de habitaciones de la base de datos
+    <servlet>
+        <servlet-name>GetSetRooms</servlet-name>
+        <servlet-class>servlets.GetSetRooms</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>GetSetRooms</servlet-name>
+        <url-pattern>/getListRooms</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>GetSetRooms</servlet-name>
+        <url-pattern>/regRoom</url-pattern>
+    </servlet-mapping>
+    //para poder registrar una repección
+    <servlet>
+        <servlet-name>regRecepcion</servlet-name>
+        <servlet-class>servlets.regRecepcion</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>regRecepcion</servlet-name>
+        <url-pattern>/registrarRecepcion</url-pattern>
+    </servlet-mapping>
+    //para poder registrar o solicitar productos
+    <servlet>
+        <servlet-name>GetSetProduct</servlet-name>
+        <servlet-class>servlets.GetSetProduct</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>GetSetProduct</servlet-name>
+        <url-pattern>/getProducts</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>GetSetProduct</servlet-name>
+        <url-pattern>/setProducts</url-pattern>
+    </servlet-mapping>
+    //para poder registrar una venta
+    <servlet>
+        <servlet-name>RegVenta</servlet-name>
+        <servlet-class>servlets.RegVenta</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RegVenta</servlet-name>
+        <url-pattern>/regVenta</url-pattern>
+    </servlet-mapping>
+    //para poder registrar una salida del cliente
+    <servlet>
+        <servlet-name>RegSalida</servlet-name>
+        <servlet-class>servlets.RegSalida</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RegSalida</servlet-name>
+        <url-pattern>/regSalida</url-pattern>
+    </servlet-mapping>
+    //para poder manejar las sesiones de forma rápida
+    <servlet>
+        <servlet-name>ControlSession</servlet-name>
+        <servlet-class>servlets.ControlSession</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ControlSession</servlet-name>
+        <url-pattern>/controlSession</url-pattern>
+    </servlet-mapping>
+    //Para hacer actualizaciones sencillas usando sql
+    <servlet>
+        <servlet-name>UpdateReg</servlet-name>
+        <servlet-class>servlets.UpdateReg</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UpdateReg</servlet-name>
+        <url-pattern>/updateReg</url-pattern>
+    </servlet-mapping>
+    //Para obtener y registrar usuarios
+    <servlet>
+        <servlet-name>GetSetUsers</servlet-name>
+        <servlet-class>servlets.GetSetUsers</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>GetSetUsers</servlet-name>
+        <url-pattern>/getUsers</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>GetSetUsers</servlet-name>
+        <url-pattern>/regUsuario</url-pattern>
+    </servlet-mapping>
+    //Para obtener y registrar categorias
+    <servlet>
+        <servlet-name>GetSetCategorias</servlet-name>
+        <servlet-class>servlets.GetSetCategoria</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>GetSetCategorias</servlet-name>
+        <url-pattern>/getCategorias</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>GetSetCategorias</servlet-name>
+        <url-pattern>/regCategoria</url-pattern>
+    </servlet-mapping>
+</web-app>

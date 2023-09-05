@@ -1,0 +1,91 @@
+.navbar-ourself{
+    box-shadow: 1px 0px 5px white;
+}
+.container-ourself{
+    background-color: rgb(241, 163, 163)!important;
+}
+/*elementos recurrentes*/
+.row-element{
+    display: flex;
+    justify-content: space-between;
+    align-items:baseline;
+}
+.cursor-pointer{
+    cursor: pointer;
+}
+.rowGroup-right{
+    display: flex;
+    justify-content: flex-end;
+}
+
+/*ESTILOS PARA LAS TARJETAS DE HABITACIONES*/
+.target-room{
+    border: 1px solid black;
+    width: 25%;
+    min-width: 250px;
+    border-radius: 7px;
+    margin:5px;
+}
+/*contenedor de la información de la habitación*/
+.info-cont{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+    align-items: center;
+    height: 100px;
+}
+.info-text .target-principal{
+    font-size: 20px;
+    color: brown;
+    font-weight: 600;
+    margin: 0px;
+}
+.icon-cont i{
+    font-size: 35px;
+}
+/*contenedor del estado de la habitación*/
+.status-cont{
+    display: flex;
+    justify-content: space-between;
+    padding: 13px 10px;
+    align-items: center;
+}
+.status-cont p{
+    margin: 0px;
+    color: white;
+    font-weight: 600;
+}
+.status-cont i{
+    color: white;
+}
+
+/*estados para las habitaciones*/
+.disponible{
+    background-color: #8e9758;
+}
+.ocupado{
+    background-color: #b15f46;
+}
+.limpieza{
+    background-color: #7c5199;
+}
+
+/*estado especial para las tarjetas de ventas*/
+.ventaBg{
+    background-color: #bbcf6a;
+}
+.ventaBg p{
+    color: gray;
+}
+.ventaBg i{
+    color: gray;
+}
+
+/*esto es para el contenedor de habitaciones*/
+.rooms-cont{
+    display: flex;
+    justify-content:space-around;
+    flex-wrap: wrap;
+}
+
+
